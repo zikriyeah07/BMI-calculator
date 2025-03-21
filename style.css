@@ -1,57 +1,79 @@
-body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+/* Global Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
+nav,nav>a{
+  position: absolute;
+  top: 1%;
+  left: 1rem;
+  color: aliceblue;
+}
+/* Container Box */
 .container {
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  margin-top: 2rem;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+}
 
-    background-color: #797978;
-    /* padding-left: 30px; */
-  }
-  #height,
-  #weight {
-    width: 150px;
-    height: 25px;
-    margin-top: 30px;
-  }
-  
-  #weight-guide {
-    margin-left: 75px;
-    margin-top: 25px;
-  }
-  
-  #results {
-    font-size: 35px;
-    margin-left: 90px;
-    margin-top: 20px;
-    color: rgb(241, 241, 241);
-  }
-  
-  button {
-    width: 150px;
-    height: 35px;
-    margin-left: 90px;
-    margin-top: 25px;
-    background-color: #fff;
-    padding: 1px 30px;
-    border-radius: 8px;
-    color: #212121;
-    text-decoration: none;
-    border: 2px solid #212121;
-  
-    font-size: 25px;
-  }
-  
-  h1 {
-    padding-left: 15px;
-    padding-top: 25px;
-    
-  }
-  
+/* Title */
+h1 {
+  /* margin-bottom: 2rem; */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffa500;
+}
+
+/* BMI Result */
+#results {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Weight Guide */
+#weight-guide {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: left;
+  background: rgba(255, 255, 255,
+}
